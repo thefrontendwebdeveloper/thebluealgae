@@ -1,0 +1,329 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*::-moz-selection {
+  background: #111111aa;
+  color: #377BFF;
+}
+
+*::selection {
+  background: #111111aa;
+  color: #377BFF;
+}
+
+body {
+  overflow-x: hidden;
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+
+nav img {
+  /* Vector */
+  position: absolute;
+  right: 3vw;
+  top: 30px;
+  width: 2rem;
+  z-index: 20;
+}
+
+#navBarBtn {
+  z-index: 20;
+}
+
+#nav-container {
+  /* transform: scale(0); */
+  background-color: #111;
+  transform-origin: top right;
+  transition: all 2s .3s ease;
+  clip-path: circle(0 at 90vw 20px);
+}
+
+#nav-container.visible {
+  position: absolute;
+  background-color: #111;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+  display: flex;
+  clip-path: circle(100vw at 90vw 20px);
+  /* transform: scale(1); */
+
+}
+
+.left-container, .right-container {
+  width: 50%;
+  height: 100%;
+  display: grid;
+  place-items: center center;
+}
+
+/* .left-container {
+  background-color: tomato;
+}
+
+.right-container {
+  background-color: royalblue;
+} */
+
+li {
+  list-style-type: none;
+}
+
+.left-container ul li a:hover {
+  color: #377BFF;
+}
+
+
+#nav-container li a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Glitther Syavina Freebies';
+  font-size: 5rem;
+}
+
+.right-container .logo img {
+  width: 25vw;
+}
+
+.right-container  {
+  text-align: right;
+  color: #B2B2B2;
+  font-size: 2.5rem;
+  font-family: 'Glitther Syavina Freebies';
+}
+
+.social a i {
+  font-size: 3rem;
+  color: #B3B3B3;
+}
+
+.social a i:hover {
+  color: #377BFF;
+}
+
+.home {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(#000000), to(rgba(0, 0, 0, 0.5))), url("../assets/img1.jpg");
+  background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0.5) 100%), url("../assets/img1.jpg");
+  background-blend-mode: multiply, normal;
+  background-position: center center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.head1 {
+  /* THE BLUE ALGAE */
+  position: absolute;
+  left: 23.67%;
+  right: 23.67%;
+  top: 10vh;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #B2B2B2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.head2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#color {
+  color: #377BFF;
+}
+
+.h2, .h3 {
+  /* The Blue Algae Musician Band */
+  position: relative;
+  left: -0.24%;
+  right: 0%;
+  top: 46.76%;
+  bottom: 41.96%;
+  font-family: Glitther Syavina Freebies;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 105.4%;
+  /* or 55px */
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #D7D7D7;
+}
+
+.h2 .br, .h3 .br {
+  display: none;
+}
+
+.h2 {
+  font-size: 6rem;
+}
+
+.h3 {
+  font-size: 2rem;
+  margin: 50px 0 0 0;
+}
+
+.icons {
+  
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  bottom: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+
+          
+}
+
+.icons a {
+  font-size: 2rem;
+  color: #D7D7D7;
+  margin: 10px;
+}
+
+.icons a:hover {
+  color: #377BFF;
+}
+
+#about {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 100vh;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#000000), to(rgba(0, 0, 0, 0.6))), url("../assets/img2.png");
+  background-image: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0.6) 100%), url("../assets/img2.png");
+  background-blend-mode: multiply, normal;
+  background-position: center center;
+}
+
+#about .head1 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 151.4%;
+  top: 20px;
+  /* or 73px */
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #B3B3B3;
+}
+
+#about .head2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 151.4%;
+  top: 20vh;
+  /* or 36px */
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #D7D7D7;
+}
+
+#about p {
+  position: absolute;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  /* or 133% */
+  text-align: justify;
+  color: #F3F3F3;
+  padding: 5%;
+  top: 20%;
+  right: 50%;
+  bottom: 0;
+  translate: transform(0, -50%);
+}
+
+#about #my-player {
+  width: 40vw;
+  height: 49vh;
+  border: solid 2px white;
+  -webkit-box-shadow: 10px 10px white;
+          box-shadow: 10px 10px white;
+  position: relative;
+  top: calc( 50% + 40px);
+  left: 75%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#next {
+  position: absolute;
+  bottom: -94vh;
+  left: 50%;
+  color: white;
+  width: 4rem;
+  height: 4rem;
+  background-color: royalblue;
+  border-radius: 50%;
+  text-align: center;
+  padding: 1.3rem 0;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+
+#next i {
+  position: relative;
+  font-size: 1.5rem;
+  z-index: 10;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+/*# sourceMappingURL=style.css.map */
