@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./dependencies/video-theme-forest/index.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/responsive.css">
     <script src="//vjs.zencdn.net/7.10.2/video.min.js"></script>
   </head>
   <body data-barba="wrapper">  
@@ -73,30 +74,32 @@
       <!-- about section -->
       <section id="about">
         <div class="head1">
-          THE <span id="color"> &MediumSpace;BLUE&MediumSpace;</span> ALGAE
+          THE <span id="color">&MediumSpace;BLUE&MediumSpace;</span> ALGAE
         </div>
         <div class="head2">
           MUSICIAN BAND
         </div>
-        <p class="para">
-          The Blue Algae, An assamese Rock music band based in Assam, India. Founded by Pranjit Exan Hazarika in 2021 including Karan Rao, Lune aka Mayur, Uttam Baruah and Arup Das. Formed with an initiative to save the band muisc in Assam, the band basically works in rich Assamese music and it's culture including music of Shree Shree Sankardeva's Borgeet to the contemporary modern songs belonging to various genres such as Rock, Electronic Dance Music(EDM), Trap, Future Base, Pop, Pop Rock, Indie, World and Folk, etc.
-        </p>
-        <video id="my-player"
-        class="video-js vjs-theme-forest"
-        controls
-        preload="auto"
-        data-setup='{}'>            
-        
-          <source src="./assets/video.mp4" type="video/mp4"></source>
-          <p class="vjs-no-js">
-            To view this video please enable JavaScript, and consider upgrading to a
-            web browser that
-            <a href="https://videojs.com/html5-video-support/" target="_blank">
-              supports HTML5 video
-            </a>
+        <div class="content">
+          <p class="para">
+            The Blue Algae, An assamese Rock music band based in Assam, India. Founded by Pranjit Exan Hazarika in 2021 including Karan Rao, Lune aka Mayur, Uttam Baruah and Arup Das. Formed with an initiative to save the band muisc in Assam, the band basically works in rich Assamese music and it's culture including music of Shree Shree Sankardeva's Borgeet to the contemporary modern songs belonging to various genres such as Rock, Electronic Dance Music(EDM), Trap, Future Base, Pop, Pop Rock, Indie, World and Folk, etc.
           </p>
-      
-        </video>
+          <video id="my-player"
+          class="video-js vjs-theme-forest"
+          controls
+          preload="auto"
+          data-setup='{}'>            
+          
+            <source src="./assets/video.mp4" type="video/mp4"></source>
+            <p class="vjs-no-js">
+              To view this video please enable JavaScript, and consider upgrading to a
+              web browser that
+              <a href="https://videojs.com/html5-video-support/" target="_blank">
+                supports HTML5 video
+              </a>
+            </p>
+        
+          </video>
+        </div>
       </section>
       <a id="next" href="./releases.html">
         <i class="fas fa-chevron-down"></i>
