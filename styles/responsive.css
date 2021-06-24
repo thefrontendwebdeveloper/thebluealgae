@@ -17,6 +17,10 @@
     font-size: 10vw;
   }
 
+  #nav-container {
+    display: none;
+  }
+
   #about .content {
     top: 10vh;
     grid-template-areas: 
@@ -52,5 +56,81 @@
     font-size: 5vw;
     top: 5%;
   }
+
+  .container {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .scrolling-wrapper {
+    flex-direction: column;
+  }
+
+  img {
+  min-width: 80%;
+  min-height: 100%;
+}
   
+}
+
+/* Merubah posisi member-image dengan member-info */
+@media screen and (min-width: 771px) {
+  .member:nth-child(4n+3) .member-info,
+  .member:nth-child(4n+4) .member-info {
+    order: 1;
+  }
+  .member:nth-child(4n+3) .member-image,
+  .member:nth-child(4n+4) .member-image {
+    order: 2;
+  }
+
+  /* Merubah posisi sigitiga pada baris genap */
+  .member:nth-child(4n+3) .member-image::after,
+  .member:nth-child(4n+4) .member-image::after {
+    left: 0;
+    right: auto;
+    transform: translateY(-50%) rotateZ(180deg);
+  }
+}
+
+
+/* Mobile Styles */
+@media screen and (max-width: 770px) {
+  .list-members {
+    width: 95%;
+  }
+  .member {
+    flex-basis: 100%;
+    font-size: 14px;
+  }
+  .social-link .fab {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+
+  .member:nth-child(even) .member-info {
+    order: 1;
+  }
+  .member:nth-child(even) .member-image {
+    order: 2;
+  }
+  
+  /* Merubah posisi sigitiga elemen genap */
+  .member:nth-child(even) .member-image::after {
+    left: 0;
+    right: auto;
+    transform: translateY(-50%) rotateZ(180deg);
+  }
+}
+
+@media (max-width: 800px) {
+  .scrolling-wrapper {
+    flex-direction: column;
+  }
+
+  img {
+  min-width: 80%;
+  min-height: 100%;
+}
 }
