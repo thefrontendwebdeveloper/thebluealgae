@@ -438,7 +438,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 3vh;
+  font-size: 2vh;
   background: linear-gradient(180deg, #000000 0%, #00113D 100%);
   color: #B2B2B2;
 }
