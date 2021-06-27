@@ -300,9 +300,10 @@
   }
 
 
+
  .list-members {
   background: linear-gradient(180deg, #000000 0%, #00113D 100%);
-  width: 80%;
+  width: 100%;
   margin: auto auto;
   display: flex;
   flex-wrap: wrap;
@@ -312,6 +313,8 @@
   width: 100vw;
   height: 100vh;
   background: linear-gradient(180deg, #000000 0%, #00113D 100%);
+  font-family: Montserrat;
+  position: relative;
 }
 
 .member {
